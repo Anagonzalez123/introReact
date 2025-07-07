@@ -1,0 +1,49 @@
+.categories {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.categoriesContainers {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+    margin-top: 20px;
+    gap: 20px;
+}
+
+/* Link con mismo estilo que antes tenías en 'div' */
+.categoryLink {
+    display: flex;
+    justify-content: space-evenly;
+    width: 250px;
+    background-color: whitesmoke;
+    height: 100px;
+    align-items: center;
+    border: 2px solid hsla(0, 4%, 41%, 0.1);
+    gap: 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    color: inherit;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden;
+}
+
+/* Hover como antes */
+.categoriesContainers a:hover {
+    background-color: #f0f0f0;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(0,0,0,0.15);
+}
+
+.categoriesContainers a img {
+    width: 90px;
+    height: 90px;
+    object-fit: contain;
+    overflow: hidden;
+    border-radius: 20%;
+}
